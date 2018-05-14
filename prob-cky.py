@@ -2,8 +2,9 @@ import sys
 import nltk
 from node import node
 from nltk.stem import WordNetLemmatizer
-grammar_file = sys.argv[1]
-sentence = sys.argv[2].lower().split(' ')
+grammar_file = "pcfg.txt"
+sentence = "She book a flight".lower().split(' ')
+print(sentence)
 
 grammar = {}
 g = [line.rstrip('\n') for line in open(grammar_file)]
